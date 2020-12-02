@@ -5,7 +5,7 @@
 }
 #canvas {
   /* height: 100vh; */
-  border: 1px solid red;
+  outline: 1px solid red;
   /* 以下用canvas标签的样式 */
   display: block;
   /* width: 100vw; */
