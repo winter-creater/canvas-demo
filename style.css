@@ -4,6 +4,10 @@
   box-sizing: border-box;
 }
 #canvas {
-  height: 100vh;
+  /* height: 100vh; */
   border: 1px solid red;
+  /* 以下用canvas标签的样式 */
+  display: block;
+  /* width: 100vw; */
+  /* 和屏幕一样宽 */
 }

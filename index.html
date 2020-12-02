@@ -8,8 +8,17 @@
     <!-- <script src="index.js"></script> -->
   </head>
   <body>
-    <div id="canvas"></div>
+    <canvas id="canvas" width="100" height="100"></canvas>
     <script>
+      var canvas = document.getElementById("canvas");
+      canvas.width = document.body.clientWidth;
+      canvas.height = document.body.clientHeight;
+
+      var ctx = canvas.getContext("2d");
+      ctx.fillStyle = "blue";
+      ctx.fillRect(20, 20, 66, 60);
+    </script>
+    <!--<script>
       canvas.onmousemove = (e) => {
         console.log(e.clientX);
         console.log(e.clientY);
@@ -28,6 +37,6 @@
         canvas.appendChild(div);
         // 添加一个孩子到canvas,现实再页面上了
       };
-    </script>
+    </script> -->
   </body>
 </html>
